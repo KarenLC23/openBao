@@ -816,10 +816,10 @@ server:
   # use dev mode for anything other than experimenting.
   # See https://developer.hashicorp.com/vault/docs/concepts/dev-server to know more
   dev:
-    enabled: false
+    enabled: true  # habilita el modo de desarrollo
 
     # Set VAULT_DEV_ROOT_TOKEN_ID value
-    devRootToken: "root"
+    devRootToken: "root"  # token de prueba para que se abra automáticamente
 
   # Run OpenBao in "standalone" mode. This is the default mode that will deploy if
   # no arguments are given to helm. This requires a PVC for data storage to use
@@ -1028,10 +1028,10 @@ server:
   hostNetwork: false
 
 
-  devMode: true  # permite arrancar sin sellado
-  persistence:
-    enabled: true
-    existingClaim: openbao-pvc-prod
+  # devMode: true  # permite arrancar sin sellado
+  # persistence:
+  #   enabled: true
+  #   existingClaim: openbao-pvc-prod
 
 
 # OpenBao UI
