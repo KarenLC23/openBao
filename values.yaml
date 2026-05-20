@@ -1027,6 +1027,15 @@ server:
   # Should the server pods run on the host network
   hostNetwork: false
 
+
+  rootKeyFromSecret:
+    name: openbao-root-key
+    key: rootKey
+  persistence:
+    enabled: true
+    existingClaim: openbao-pvc-prod
+
+    
 # OpenBao UI
 ui:
   # True if you want to create a Service entry for the OpenBao UI.
