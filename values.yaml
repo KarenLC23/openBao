@@ -1028,14 +1028,12 @@ server:
   hostNetwork: false
 
 
-  rootKeyFromSecret:
-    name: openbao-root-key
-    key: rootKey
+  devMode: true  # permite arrancar sin sellado
   persistence:
     enabled: true
     existingClaim: openbao-pvc-prod
 
-    
+
 # OpenBao UI
 ui:
   # True if you want to create a Service entry for the OpenBao UI.
