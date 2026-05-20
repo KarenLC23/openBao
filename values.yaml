@@ -895,7 +895,7 @@ server:
     raft:
 
       # Enables Raft integrated storage
-      enabled: false
+      enabled: true
       # Set the Node Raft ID to the name of the pod
       setNodeId: false
 
@@ -1028,10 +1028,6 @@ server:
   hostNetwork: false
 
 
-  # devMode: true  # permite arrancar sin sellado
-  # persistence:
-  #   enabled: true
-  #   existingClaim: openbao-pvc-prod
 
 
 # OpenBao UI
